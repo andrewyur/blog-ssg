@@ -1,0 +1,118 @@
+:root {
+  --background-color: #fff5e0;
+  --accent-color: orangered;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background-color);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-right: 30px;
+  writing-mode: vertical-lr;
+}
+
+.navLinkWrapper {
+  background-color: var(--accent-color);
+  width: fit-content;
+  height: fit-content;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav a,
+nav a:active,
+nav a:visited {
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
+  display: inline-block;
+  color: black;
+  transform-origin: center right;
+  transform: scaleX(2);
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  font-size: 1.6rem;
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+nav a:hover {
+  transform: scaleX(2) translateX(-5px);
+}
+
+#project-template {
+  position: static;
+  width: 100%;
+  max-width: 1100px;
+  width: 70%;
+  margin-top: 100px;
+  margin-bottom: 130px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 0px;
+  min-height: 100vh;
+}
+
+#project-template * {
+  user-select: text;
+}
+
+#project-template h1 {
+  margin-bottom: 20px;
+}
+
+#project-template p {
+  line-height: 140%;
+  font-family: "Cabin";
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#project-template h2 {
+  font-family: "EB Garamond";
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-size: 4rem;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#project-template hr {
+  width: 40%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 60px;
+}
+
+#infoDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  transform: skewX(-10deg);
+  width: 100%;
+  padding-left: 5px;
+}
+
+#project-template img {
+  position: relative;
+  margin: auto;
+  margin-top: 10px;
+  max-width: 100%;
+  margin-bottom: 30px;
+}

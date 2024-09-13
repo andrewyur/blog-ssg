@@ -1,0 +1,32 @@
+{% extends "base.html" %} 
+
+{% block page_title %}
+Projects
+{% endblock page_title %}
+
+{% block extra_styles %}
+<link rel="stylesheet" href="{{ get_url(path='styles/ProjectsList.css') }}">
+{% endblock extra_styles %}
+
+<header>
+  <nav>
+    <div class="navLinkWrapper">
+      <a href="https://portfolio.super-youtube.com">Portfolio</a>
+    </div>
+  </nav>
+</header>
+<main id="projects-list">
+  <h1>Projects</h1>
+  <hr />
+  <ul id="projectsContainer">
+    {% for page in section.pages %}
+
+      <a href="{{ page.permalink | safe }}"  class="projectsLink">
+        <p>{{ page.date }}</p>
+        <h2>{{ page.title }}</h2>
+      </a>
+
+    {% endfor %}
+  </ul>
+</main>
+{% endblock content %}

@@ -1,0 +1,30 @@
+{% extends "base.html" %} 
+
+{% block page_title %}
+{{ page.title }}
+{% endblock page_title %}
+
+{% block extra_styles %}
+<link rel="stylesheet" href="{{ get_url(path='styles/ProjectsTemplate.css') }}">
+{% endblock extra_styles %}
+
+{% block content %}
+   <header>
+      <nav>
+         <div class="navLinkWrapper">
+            <a href="{{  get_url(path='@/_index.md') }}">Other Projects</a>
+         </div>
+         <div class="navLinkWrapper">
+            <a href="https://portfolio.super-youtube.com">Portfolio</a>
+         </div>
+      </nav>
+   </header>
+   <main id="project-template">
+      <div id="infoDiv">
+         <p>{{ page.date }}</p>
+         <h1>{{ page.title }}</h1>
+      </div>
+      <hr />
+      {{ page.content | safe }} 
+   </main>
+{% endblock content %}
