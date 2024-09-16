@@ -27,4 +27,4 @@ This was one of the first projects where I had made use of automated unit testin
 
 Getting this thing dockerized and working on the cloud turned out to be a huge pain, because the whole process would crash immediatly upon being booted up, because I accidentally used the command that opened the elixir shell. There was nothing to indicate this as the reason however, and it was a stressful couple of days trying to figure this out. It still randomly crashes and reboots, and I am not sure why and do not have the means to find out. Thankfully it is not a problem, because it happens intermittently enough that it is not worth worrying about.
 
-View the repo [here](https://github.com/andrewyur/collab_notepad) or the live website [here](collab-notepad.super-youtube.com)
+View the repo [here](https://github.com/andrewyur/collab_notepad) or the live website [here](https://collab-notepad.super-youtube.com)
